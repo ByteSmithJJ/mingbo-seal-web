@@ -20,9 +20,6 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 
-# Screenshots (keep local only)
-screenshots/
-
 # AI assistant config
 .claude/
 CLAUDE.md
