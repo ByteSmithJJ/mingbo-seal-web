@@ -1,0 +1,73 @@
+name: Bug Report
+description: 提交 Bug 报告帮助我们改进
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您花时间提交 Bug 报告！请尽量提供以下信息以便我们快速定位和修复问题。
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug 描述
+      description: 请清晰简洁地描述这个 Bug
+      placeholder: 当执行...操作时，出现了...问题
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 重现步骤
+      description: 请列出重现此问题的步骤
+      placeholder: |
+        1. 打开页面 '...'
+        2. 点击 '...'
+        3. 滚动到 '...'
+        4. 观察到错误
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望行为
+      description: 您期望发生什么？
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 截图（可选）
+      description: 如果适用，请添加截图帮助说明问题
+
+  - type: input
+    id: os
+    attributes:
+      label: 操作系统
+      placeholder: "例如: Windows 11, macOS 14, Ubuntu 24.04"
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: 浏览器及版本
+      placeholder: "例如: Chrome 125, Edge 125, Firefox 127"
+    validations:
+      required: true
+
+  - type: input
+    id: node-version
+    attributes:
+      label: Node.js 版本
+      placeholder: "例如: 20.19.0"
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 补充信息
+      description: 任何其他有助于理解问题的信息

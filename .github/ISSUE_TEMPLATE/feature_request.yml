@@ -1,0 +1,38 @@
+name: Feature Request
+description: 提交功能建议
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您提出功能建议！请详细描述您的想法，帮助我们更好地理解您的需求。
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 这个功能解决什么问题？
+      description: 请清晰简洁地描述您面临的问题或需求
+      placeholder: 在使用...时，我经常需要...但目前系统不支持...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: 您期望的解决方案
+      description: 请描述您期望的功能或解决方案
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 您考虑过的替代方案
+      description: 您是否考虑过其他替代方法？
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 补充信息
+      description: 任何其他有助于理解此需求的信息（截图、参考链接等）
