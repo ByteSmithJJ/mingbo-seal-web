@@ -20,10 +20,21 @@
 2. 使用 Feature Request 模板创建新 Issue
 3. 描述功能的使用场景和期望效果
 
+### 分支策略
+
+| 分支 | 用途 |
+|------|------|
+| `main` | 稳定发布分支，仅通过 PR 从 `dev` 合入，禁止直推 |
+| `dev` | 日常开发集成分支，所有功能分支从此拉出并合回 |
+
 ### 提交代码
 
 1. **Fork** 本项目
-2. 从 `main` 分支创建您的 feature 分支：`git checkout -b feature/your-feature`
+2. 从 `dev` 分支创建您的 feature 分支：
+   ```bash
+   git checkout dev
+   git checkout -b feature/your-feature
+   ```
 3. 进行代码修改
 4. 确保代码通过检查：
    ```bash
@@ -34,7 +45,7 @@
    ```bash
    pnpm commit     # 使用 cz-git 交互式提交
    ```
-6. 推送到您的仓库并提交 Pull Request
+6. 推送到您的仓库并提交 Pull Request **到 `dev` 分支**
 
 ## 开发环境
 
@@ -89,7 +100,7 @@ pnpm lint:stylelint   # Stylelint 自动修复
 1. 维护者会审核您的 PR
 2. CI 检查必须全部通过
 3. 可能会要求修改或补充
-4. 审核通过后合并到 `main` 分支
+4. 审核通过后合并到 `dev` 分支，后续由维护者将 `dev` 合并到 `main` 并发布
 
 ## 项目结构
 
