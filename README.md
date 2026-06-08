@@ -46,6 +46,41 @@ MingBo Seal Web is the frontend of the MingBo e-signature and approval workflow 
 | Process Design | BPMN.js                                         |
 | Code Quality   | ESLint, Prettier, Stylelint, Husky, Commitlint  |
 
+## Screenshots
+
+<table>
+  <tr>
+    <td><img src="screenshots/login.png" alt="Login"></td>
+    <td><img src="screenshots/dashboard.png" alt="Dashboard"></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Login</strong></td>
+    <td align="center"><strong>Dashboard</strong></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/seal-position.png" alt="Seal Position"></td>
+    <td><img src="screenshots/form-designer.png" alt="Form Designer"></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Seal Position Configuration</strong></td>
+    <td align="center"><strong>Form Designer</strong></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/process-designer.png" alt="Process Designer"></td>
+    <td><img src="screenshots/start-process.png" alt="Start Process"></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>BPMN Process Designer</strong></td>
+    <td align="center"><strong>Start Process</strong></td>
+  </tr>
+  <tr>
+    <td colspan="2"><img src="screenshots/my-applications.png" alt="My Applications"></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2"><strong>My Applications</strong></td>
+  </tr>
+</table>
+
 ## Quick Start
 
 ### Prerequisites
@@ -142,6 +177,7 @@ This project is built upon the following excellent open source projects:
 | **[Vue I18n](https://github.com/intlify/vue-i18n)** | Internationalization | MIT |
 | **[Iconify](https://github.com/iconify/iconify)** | Icon Library | MIT |
 | **[BPMN.js](https://github.com/bpmn-io/bpmn-js)** | Process Designer | Custom License |
+| **[form-create](https://github.com/xaboy/form-create)** | Form Designer | MIT |
 | **[VueUse](https://github.com/vueuse/vueuse)** | Composition Utilities | MIT |
 | **[ESLint](https://github.com/eslint/eslint)** | Linting | MIT |
 | **[Prettier](https://github.com/prettier/prettier)** | Code Formatting | MIT |
